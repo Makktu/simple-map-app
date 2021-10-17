@@ -24,6 +24,20 @@ if (navigator.geolocation) {
             }
         ).addTo(map);
 
+        L.marker(coords)
+            .addTo(map)
+            .bindPopup(
+                L.popup({
+                    maxWidth: 250,
+                    minWidth: 100,
+                    autoClose: false,
+                    closeOnClick: false,
+                    className: "location-popup",
+                })
+            )
+            .setPopupContent("You Are Here")
+            .openPopup();
+
         // map.on("click", function (mapE) {
         //     mapEvent = mapE;
         //     form.classList.remove("hidden");

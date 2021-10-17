@@ -22,3 +22,18 @@ body {
     width: 100vw;
     height: 100vh;
 }
+
+.leaflet-popup .leaflet-popup-content-wrapper {
+    background-color: rgb(16, 116, 173);
+    color: whitesmoke;
+    border-radius: 5px;
+    /* padding-right: 0.6rem; */
+}
+
+.leaflet-popup .leaflet-popup-content {
+    font-size: 0.9rem;
+}
+
+.leaflet-popup .leaflet-popup-tip {
+    background-color: var(--color-dark--1);
+}
