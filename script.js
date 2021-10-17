@@ -2,6 +2,8 @@
 
 let map;
 
+const infoLine = document.querySelector(".info");
+
 if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function (position) {
         const { latitude } = position.coords;
@@ -37,13 +39,15 @@ if (navigator.geolocation) {
             )
             .setPopupContent("You Are Here")
             .openPopup();
-
-        // map.on("click", function (mapE) {
-        //     mapEvent = mapE;
-        //     form.classList.remove("hidden");
-        //     inputDistance.focus();
-        // });
     });
 } else {
     alert("Could not get your position");
 }
+
+setTimeout(function () {
+    infoLine.textContent = "Tap here to open the action menu";
+}, 8000);
+
+setTimeout(function () {
+    infoLine.textContent = "";
+}, 20000);

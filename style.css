@@ -23,6 +23,15 @@ body {
     height: 100vh;
 }
 
+.info {
+    height: 5rem;
+    width: 5rem;
+    border: black 2px solid;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
 .leaflet-popup .leaflet-popup-content-wrapper {
     background-color: rgb(16, 116, 173);
     color: whitesmoke;
