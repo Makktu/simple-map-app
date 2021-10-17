@@ -17,3 +17,8 @@ body {
     background-color: rgb(19, 17, 17);
     color: rgb(236, 222, 222);
 }
+
+.the-map {
+    width: 100vw;
+    height: 100vh;
+}
